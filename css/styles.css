@@ -51,6 +51,87 @@ body {
 }
 
 
+/* ======================= START OF THE CODE FOR THE NAVBAR ===============  */
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: cyan;
+    z-index: 100000000;
+    position:sticky;
+    top: 0;
+}
+
+.logo {
+    color: rgb(64, 16, 44);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+
+.nav-links li {
+    list-style: none;
+    margin-right: 5rem;
+}
+
+.nav-links a {
+    color: rgb(64, 16, 44);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 20px;
+    height: 3px;
+    background-color: rgb(64, 16, 44);
+    margin: 5px;
+    transition: all .5s ease;
+}
+
+
+/* for toggling the burger  */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+
+}
+
+
+
+
+/* ======================= END OF THE CODE FOR THE NAVBAR ===============  */
+
+
+
+
+
+
+
   
 .scrollTop.active {
     bottom: 20px;
@@ -396,7 +477,6 @@ footer {
 }
 
 
-
 /* BREAKPOINTS  */
 
 @media (max-width: 1200px) {
@@ -440,32 +520,8 @@ footer {
     }
 }
 
+
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0,0,0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
-        display: none;
-    }
-
-    .navbar.active {
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
 
     .home {
         flex-direction: column;
@@ -500,6 +556,30 @@ footer {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: cyan;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform .8s ease-in-out;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+
+
 }
 
 
@@ -535,6 +615,27 @@ footer {
     }
 }
 
+
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+
+/* ==== HERE FOR THE KEYFRAMES ANMATIONS ====  */
+
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    } 
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
 
 
