@@ -25,11 +25,40 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     })
 
-
-
-
 }
 
+
+
+
+
+
+// ========================= start of the sections animations ======================
+
+
+const animator = () => {
+    let sections = document.querySelectorAll('section');
+
+    window.onscroll = () => {
+        sections.forEach(sec => {
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 300;
+            let height = sec.offsetHeight;
+    
+            if (top >= offset && top < offset + height) {
+                sec.classList.add("show__animate");
+            } 
+            
+            // if you want to use repeating animation on scroll 
+            else {
+                sec.classList.remove('show__animate')
+            }
+        })
+    }
+}
+
+
+
+// ========================= end of the sections animations ========================
 
 
 
@@ -78,3 +107,4 @@ upwards = () => {
 
 upwards();
 navSlide();
+animator();

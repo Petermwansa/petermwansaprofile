@@ -477,6 +477,97 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============ START OF THE SECTION ANIMATIONS ===========  */
+
+
+
+section .animate {
+    opacity: 0;
+    filter: blur(5px);
+    transition: 1.5s;
+}
+
+section.show__animate .animate {
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+
+.sec__2 .animate {
+    transform: scale(.6);
+}
+
+.sec__2.show__animate .animate {
+    transform: scale(1);
+}
+
+
+.sec__3 .animate {
+    transform: scale(.6);
+}
+
+.sec__3.show__animate .animate {
+    transform: scale(1);
+}
+
+
+.sec__5 .animate {
+    transform: scale(.6);
+}
+
+.sec__5.show__animate .animate {
+    transform: scale(1);
+}
+
+
+.sec__4 .animate  {
+    transform: translateX(-100%);
+    transition: 1s;
+    transition-delay: calc(.2s * var(--i));
+}
+
+.sec__4.show__animate .animate {
+    align-items: center;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+/* ============ START OF THE SECTION ANIMATIONS ===========  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* BREAKPOINTS  */
 
 @media (max-width: 1200px) {
