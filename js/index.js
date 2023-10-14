@@ -80,7 +80,7 @@ const animator = () => {
 // ================================== typed js ==========================================
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Backend Developer', 'UX Designer'],
+    strings: ['Web Developer', 'iOS Developer', 'UI/UX Designer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,

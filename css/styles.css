@@ -170,6 +170,7 @@ span {
 
 .home-img img {
     width: 35vw;
+    border-radius: 50%;
 }
 
 .home-img img {
@@ -258,8 +259,19 @@ span {
     background: var(--second-bg-color);
 }
 
+
+
 .about-img {
-    width: 35vw;
+    width: 600px;
+    height: 200px;
+}
+
+.about-img img{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 50%;
+    animation: floatImage 4s ease-in-out infinite;
+    
 }
 
 .heading {
@@ -727,10 +739,6 @@ section.show__animate .animate {
         transform: translateX(0px);
     }
 }
-
-
-
-
 
 
 
