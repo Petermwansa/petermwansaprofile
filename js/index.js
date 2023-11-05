@@ -5,14 +5,19 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
-    const navLink = document.querySelector('.nav-links .link');
+    // const navLink = document.querySelector('.nav-links .link');
 
 
+    // const navLink = document.getElementsByClassName('.nav-link');
 
-    // to toggle the nav 
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
 
+    // navLink.addEventListener('click', () => {
+    //     nav.classList.toggle('nav-active');
+    // })
+
+        // to toggle the nav 
+    document.onclick = function(e) {
+        
         // to animate the links 
         navLinks.forEach ((link, index) => {
             if (link.style.animation) {
@@ -21,11 +26,64 @@ const navSlide = () => {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .8}s`;
             }
         })
-        //the burger aniamation 
+        // //the burger aniamation 
+        // burger.classList.toggle('toggle');
+
+
+        nav.classList.toggle('nav-active');
         burger.classList.toggle('toggle');
-    })
+
+        if (!burger.contains(e.target) && !nav.contains(e.target)) {
+            nav.classList.remove('nav-active');
+            burger.classList.remove('toggle');
+        }
+
+
+    }
+
+
+
+    // // to toggle the nav 
+    // burger.addEventListener('click', () => {
+    //     nav.classList.toggle('nav-active');
+
+    //     // to animate the links 
+    //     navLinks.forEach ((link, index) => {
+    //         if (link.style.animation) {
+    //             link.style.animation = '';
+    //         } else {
+    //             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .8}s`;
+    //         }
+    //     })
+    //     //the burger aniamation 
+    //     burger.classList.toggle('toggle');
+    // })
+
+
+
 
 }
+
+
+
+
+
+
+// ========================= start of the remove nav ======================
+
+const removeNav = () => {
+    var nav1 = document.querySelectorAll('.nav-link'),
+    body = document.body;
+
+    nav1.addEventListener('click', function(e) {
+        body.className = body.className? '' : 'with_nav' 
+        e.preventDefault();
+    });
+}
+
+// ========================= end of the remove nav  ======================
+
+
 
 
 
@@ -89,6 +147,42 @@ const typed = new Typed('.multiple-text', {
 
 
 
+
+
+//THIS ONE IS FOR THE PRELOADER 
+
+load = () => {
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+        loader.style.display = "none"
+    }, 20000);
+};
+
+
+
+
+
+
+
+//BELOW FOR THE CURSOR
+
+cursor = () => {
+    var cursor = document.getElementById("cursor");
+
+    document.onmousemove = function(e) {
+        cursor.style.left = (e.pageX - 25) + "px";
+        cursor.style.top = (e.pageY - 25) + "px";
+        cursor.style.display = "block";
+    }
+}
+
+
+
+
+
+
+
+
 //SCROLLER SECTION
 upwards = () => {
     window.addEventListener('scroll', function(){
@@ -104,7 +198,9 @@ upwards = () => {
 }
 
 
-
+// removeNav();
+cursor();
+load();
 upwards();
 navSlide();
 animator();

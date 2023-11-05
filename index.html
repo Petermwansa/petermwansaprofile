@@ -15,6 +15,12 @@
 </head>
 <body>
 
+
+    <!-- for the preloader -->
+    <div id="preloader"></div>
+    <div id="cursor"></div>
+
+
     <!-- for the scroller to the top  -->
     <div class="scrollTop" onclick="scrollToTop();"></div>
 
@@ -23,25 +29,28 @@
         <div class="logo">
             <h4>Peter</h4>
         </div>
-        <ul class="nav-links">
-            <li>
+        <ul class="nav-links" id="sidebar">
+            <li class="nav-link">
                 <a href="#home">Home</a>
             </li>
-            <li>
+            <li class="nav-link">
                 <a href="#about">About</a>
             </li>
-            <li>
+            <li class="nav-link">
                 <a href="#skills">Skills</a>
             </li>
-            <li>
-                <a href="#portfolio">portfolio</a>
+            <li class="nav-link">
+                <a href="#languages">Languages</a>
             </li>
-            <li>
+            <li class="nav-link">
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-link">
                 <a href="#contact">Contacts</a>
             </li>
         </ul>
 
-        <div class="burger">
+        <div class="burger" id="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -104,7 +113,7 @@
 
     <!-- the skills section starts  -->
 
-    <section id="skills sec__3" class="skills">
+    <section id="skills" class="skills sec__3">
         <h2 class="heading animate">My <span>Skills</span></h2>
 
         <div class="skills-container">
@@ -156,7 +165,7 @@
 
     <!-- the languages and frameworks section starts  -->
 
-    <section id="languages skills sec__3" class="skills">
+    <section id="languages" class="skills languages skills sec__3">
         <h2 class="heading animate">Languages<span> & </span>Frameworks/Libraries</h2>
 
         <div class="skills-container">
@@ -319,6 +328,8 @@
     <!-- the projects section ends  -->
 
 
+
+
     <!-- start of the languages and frameworks section  -->
 
 
@@ -334,7 +345,7 @@
     <section class="contact sec__5" id="contact">
         <h2 class="heading animate">Contact <span>Me</span></h2>
 
-        <form action="https://formsubmit.co/mwansapeter800@gmail.com" method="POST">
+        <form action="https://formsubmit.co/info@petermwansa.tech" method="POST">
             <div class="input-box animate">
                 <input type="text" name="Name" placeholder="Full Name">
                 <input type="text" name="Email" placeholder="Email Address">

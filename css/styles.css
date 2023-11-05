@@ -51,6 +51,55 @@ body {
 }
 
 
+
+
+
+/* ======================= START OF THE CODE FOR THE NAVBAR ===============  */
+
+#preloader {
+    background: var(--bg-color) url(/images/loader.gif.mp4) no-repeat center;
+    height: 100%;
+    width: 100%;
+    background-size: 10%;
+    position: absolute;
+    z-index: 100;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+
+/* ========================== BELOW FOR THE CURSOR ============================  */
+
+#cursor {
+    height: 80px;
+    width: 80px;
+    background: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+div:hover ~ #cursor {
+    transform: scale(0.5);
+}
+  
+/* ========================== FOR THE CURSOR ENDS ============================  */
+
+
+
+
+
 /* ======================= START OF THE CODE FOR THE NAVBAR ===============  */
 
 
@@ -65,6 +114,11 @@ nav{
     z-index: 100000000;
     position:sticky;
     top: 0;
+}
+
+
+.with_nav {
+    display: none;
 }
 
 .logo {
