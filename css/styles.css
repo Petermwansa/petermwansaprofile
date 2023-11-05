@@ -165,7 +165,7 @@ nav{
 
 .burger div {
     width: 20px;
-    height: 3px;
+    height: 1.8px;
     background-color: rgb(64, 16, 44);
     margin: 5px;
     transition: all .5s ease;
@@ -276,6 +276,8 @@ span {
 
 .home-content p {
     font-size: 1.6rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
 }
 
 .social-media a {
@@ -328,7 +330,7 @@ span {
 
 
 .about-img {
-    width: 600px;
+    width: 800px;
     height: 200px;
 }
 
@@ -339,6 +341,15 @@ span {
     animation: floatImage 4s ease-in-out infinite;
     
 }
+
+.about .about-content h2 {
+    margin-bottom: 4rem;
+}
+
+.about .about-content p {
+    line-height: 3rem;
+}
+
 
 .heading {
     text-align: center;
@@ -420,10 +431,14 @@ span {
 
 .portfolio-container .portfolio-box{
     position: relative;
-    border-radius: 2rem;
+    border-radius: 2.5rem;
     box-shadow:  0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+}
+
+.portfolio-box {
+    margin: 3rem;
 }
 
 .portfolio-box img {
@@ -653,8 +668,6 @@ section.show__animate .animate {
         padding: 2rem 3%;
     }
 
-
-
     section {
         padding: 10rem 3% 2rem;
     }
@@ -716,7 +729,7 @@ section.show__animate .animate {
 
     .portfolio-container .portfolio-box p {
         font-size: 1.5rem;
-        line-height: 3rem;
+        line-height: 2rem;
     }
 
 
@@ -736,9 +749,17 @@ section.show__animate .animate {
     }
 
 
-
     .contact {
         min-height: auto;
+        padding: 15%;
+    }
+
+    .contact h2 {
+        font-size: 3rem;
+    }
+
+    .contact form .input-box input {
+        font-size: 1.5rem;
     }
 
     .footer {
@@ -749,8 +770,31 @@ section.show__animate .animate {
 
 @media (max-width: 800px) {
 
+    /* for the scrollTop  */
+    .scrollTop {
+        text-align: center;
+        align-items: center;
+        position: fixed;
+        bottom: 800px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        background: aqua url(/images/up.png);
+        border-radius: 50%;
+        background-size: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 10000;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.7s;
+    }
+
     .home {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .home-content h3 {
@@ -761,13 +805,21 @@ section.show__animate .animate {
         color: var(--main-color);
     }
 
+    .home .home-content p {
+        line-height: 3rem;
+    }
+
     .home-img img {
         width: 60vw;
         margin-top: 4rem;
     }
 
+    .about h2 {
+        text-align: center;
+    }
     .about {
         flex-direction: column-reverse;
+        text-align: center;
     }
 
     .about-img {
@@ -808,6 +860,10 @@ section.show__animate .animate {
     }
     .burger {
         display: block;
+    }
+
+    .footer .footer-text p {
+        font-size: 1.4rem;
     }
 
 

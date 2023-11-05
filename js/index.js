@@ -8,14 +8,10 @@ const navSlide = () => {
     // const navLink = document.querySelector('.nav-links .link');
 
 
-    // const navLink = document.getElementsByClassName('.nav-link');
-
-
-    // navLink.addEventListener('click', () => {
-    //     nav.classList.toggle('nav-active');
+    // classList.toggle('nav-active');
     // })
 
-        // to toggle the nav 
+    // to toggle the nav 
     document.onclick = function(e) {
         
         // to animate the links 
@@ -34,8 +30,24 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
 
         if (!burger.contains(e.target) && !nav.contains(e.target)) {
-            nav.classList.remove('nav-active');
-            burger.classList.remove('toggle');
+
+            if(!nav.classList.contains('nav-active') && !burger.classList.contains('toggle')) {
+
+            } 
+            else {
+
+                nav.classList.remove('nav-active');
+                burger.classList.remove('toggle');
+
+
+                // setTimeout(function() {
+                //     nav.classList.add('nav-active');
+                //     burger.classList.add('toggle');
+                // }, 2000)
+            }
+
+            
+
         }
 
 
@@ -197,10 +209,10 @@ upwards = () => {
     }
 }
 
-
-// removeNav();
 cursor();
+animator();
+navSlide();
 load();
 upwards();
-navSlide();
-animator();
+
+
