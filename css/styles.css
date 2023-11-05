@@ -87,7 +87,7 @@ body {
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
     opacity: 0.5;
-    z-index: -1;
+    z-index: -10;
   }
   
 div:hover ~ #cursor {
@@ -106,13 +106,14 @@ div:hover ~ #cursor {
 
 
 nav{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
     background-color: cyan;
     z-index: 100000000;
-    position:sticky;
+    position: sticky;
     top: 0;
 }
 
@@ -122,16 +123,24 @@ nav{
 }
 
 .logo {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
     color: rgb(64, 16, 44);
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 3rem;
 }
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
-    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+
 
 }
 
@@ -150,6 +159,8 @@ nav{
 
 .burger {
     display: none;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
 }
 
 .burger div {
@@ -158,6 +169,7 @@ nav{
     background-color: rgb(64, 16, 44);
     margin: 5px;
     transition: all .5s ease;
+    right: 0;
 }
 
 
@@ -201,7 +213,7 @@ nav{
 
 section {
     min-height: 100vh;
-    padding: 10rem 15% 2rem;
+    padding: 20rem 10% 2rem;
 }
 
 span {
@@ -223,7 +235,7 @@ span {
 }
 
 .home-img img {
-    width: 35vw;
+    width: 25vw;
     border-radius: 50%;
 }
 
@@ -641,6 +653,8 @@ section.show__animate .animate {
         padding: 2rem 3%;
     }
 
+
+
     section {
         padding: 10rem 3% 2rem;
     }
@@ -659,14 +673,69 @@ section.show__animate .animate {
         padding: 10rem 3% 2rem;
     }
 
+
+    .about .about-content h2 {
+        font-size: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .about .about-content h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .about .about-content p {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        line-height: 3rem;
+    }
+
+
+    .skills h2 {
+        font-size: 3rem;
+    }
+
+    .skills-container .skills-box h3 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .skills-container .skills-box p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    .portfolio h2 {
+        font-size: 3rem;
+    }
+
+    .portfolio-container .portfolio-box h4 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-container .portfolio-box p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home,
+    .about,
     .skills,
     .portfolio {
-        padding-bottom: 7rem;
+        padding: 7rem;
     }
 
     .portfolio {
         padding-bottom: 7rem;
     }
+
+
 
     .contact {
         min-height: auto;
@@ -678,18 +747,22 @@ section.show__animate .animate {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     .home {
         flex-direction: column;
     }
 
     .home-content h3 {
-        font-size: 2.6rem;
+        font-size: 2rem;
+    }
+    .home-content h1 {
+        font-size: 3rem;
+        color: var(--main-color);
     }
 
     .home-img img {
-        width: 70vw;
+        width: 60vw;
         margin-top: 4rem;
     }
 
@@ -719,7 +792,7 @@ section.show__animate .animate {
         position: absolute;
         right: 0px;
         height: 92vh;
-        top: 8vh;
+        top: 6vh;
         background-color: cyan;
         display: flex;
         flex-direction: column;
@@ -731,6 +804,7 @@ section.show__animate .animate {
 
     .nav-links li {
         opacity: 0;
+        margin-top: 10rem;
     }
     .burger {
         display: block;
