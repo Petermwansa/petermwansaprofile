@@ -851,7 +851,6 @@ section.show__animate .animate {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
         transform: translateX(100%);
         transition: transform .8s ease-in-out;
     }
