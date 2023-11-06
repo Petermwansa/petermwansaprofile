@@ -159,12 +159,19 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
+    transition: all .5s ease-in-out;
 }
+
+.nav-links a:hover {
+    color: var(--text-color);
+}
+
 
 .burger {
     display: none;
     margin-left: 2rem;
     margin-bottom: 2rem;
+    
 }
 
 .burger div {
