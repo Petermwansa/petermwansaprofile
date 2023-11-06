@@ -39,7 +39,7 @@ body {
     right: 20px;
     width: 60px;
     height: 60px;
-    background: aqua url(/images/132577-vector-up-arrow-hq-image-free.png);
+    background: aqua;
     border-radius: 50%;
     background-size: 40px;
     background-position: center;
@@ -49,6 +49,9 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: 0.7s;
+    color: var(--bg-color);
+    font-size: 2rem;
+    padding-top: 1.7rem;
 }
 
 
@@ -209,6 +212,8 @@ nav{
 .scrollTop:hover {
     width: 68px;
     height: 68px;
+    font-size: 3rem;
+    padding-top: 1.6rem;
 }
 
 
@@ -781,7 +786,7 @@ section.show__animate .animate {
         right: 20px;
         width: 45px;
         height: 45px;
-        background: aqua url(/images/132577-vector-up-arrow-hq-image-free.png);
+        background: aqua ;
         border-radius: 50%;
         background-size: 40px;
         background-position: center;
@@ -791,6 +796,15 @@ section.show__animate .animate {
         visibility: hidden;
         opacity: 0;
         transition: 0.7s;
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+
+    .scrollTop:hover {
+        width: 58px;
+        height: 58px;
+        font-size: 2.5rem;
+        padding-top: 1.3rem;
     }
 
     .home {
