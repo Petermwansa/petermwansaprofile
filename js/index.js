@@ -29,24 +29,33 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
         burger.classList.toggle('toggle');
 
+
         if (!burger.contains(e.target) && !nav.contains(e.target)) {
+
+            nav.classList.remove('nav-active');
+            burger.classList.remove('toggle');
+
+
+
+
+
+
+            // setTimeout(function() {
+            //     nav.classList.add('nav-active');
+            //     burger.classList.add('toggle');
+            // }, 2000)
 
             if(!nav.classList.contains('nav-active') && !burger.classList.contains('toggle')) {
 
             } 
             else {
 
-                nav.classList.remove('nav-active');
-                burger.classList.remove('toggle');
 
-
-                // setTimeout(function() {
-                //     nav.classList.add('nav-active');
-                //     burger.classList.add('toggle');
-                // }, 2000)
+                setTimeout(function() {
+                    nav.classList.add('nav-active');
+                    burger.classList.add('toggle');
+                }, 2000)
             }
-
-            
 
         }
 

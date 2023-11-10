@@ -13,7 +13,7 @@
     --bg-color: #0a0a0b;
     --second-bg-color: #14141a;
     --text-color: #ffff;
-    --main-color: #0eff;
+    --main-color: cyan;
 }
 
 html {
@@ -115,7 +115,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: cyan;
+    background-color: var(--main-color);
     z-index: 100000000;
     position: sticky;
     top: 0;
@@ -127,8 +127,8 @@ nav{
 }
 
 .logo {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -137,6 +137,7 @@ nav{
     letter-spacing: 5px;
     font-size: 3rem;
 }
+
 
 .nav-links {
     display: flex;
@@ -298,14 +299,14 @@ span {
 }
 
 
-.home-content h3 {
+.home .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.3rem;
     padding: 6rem 0 6rem;
 }
 
-.home-content h3:nth-of-type(2){
+.home .home-content h3:nth-of-type(2){
     margin-bottom: 2rem;
 }
 
@@ -313,6 +314,7 @@ span {
     font-weight: 700;
     font-size: 5.6rem;
     line-height: 1.3rem;
+    color: var(--main-color);
 }
 
 .home-content p {
@@ -821,7 +823,7 @@ section.show__animate .animate {
         right: 20px;
         width: 45px;
         height: 45px;
-        background: aqua ;
+        background: var(--main-color) ;
         border-radius: 50%;
         background-size: 40px;
         background-position: center;
@@ -904,7 +906,7 @@ section.show__animate .animate {
         right: 0px;
         height: 92vh;
         top: 6vh;
-        background-color: cyan;
+        background-color: var(--main-color);
         display: flex;
         flex-direction: column;
         align-items: center;
