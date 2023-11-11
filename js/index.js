@@ -5,15 +5,14 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+    const navLink = document.querySelectorAll('.nav-link li a');
     // const navLink = document.querySelector('.nav-links .link');
 
 
     // classList.toggle('nav-active');
     // })
 
-    // to toggle the nav 
-    document.onclick = function(e) {
-        
+    burger.onclick = function () {
         // to animate the links 
         navLinks.forEach ((link, index) => {
             if (link.style.animation) {
@@ -29,11 +28,27 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
         burger.classList.toggle('toggle');
 
+    }
+
+    navLink.onclick = function () {
 
         if (!burger.contains(e.target) && !nav.contains(e.target)) {
-
             nav.classList.remove('nav-active');
             burger.classList.remove('toggle');
+        }
+
+
+
+    }
+
+
+
+    // to toggle the nav 
+    document.onclick = function(e) {
+        
+
+
+        if (!burger.contains(e.target) && !nav.contains(e.target)) {
 
 
 
