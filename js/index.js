@@ -25,19 +25,65 @@ const navSlide = () => {
 
         
         // to animate the links 
-        navLinks.forEach ((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .8}s`;
-            }
-        })
+        if(!burger.classList.contains('toggle') && !nav.classList.contains('nav-active')) {
+            navLinks.forEach ((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .8}s`;
+                }
+            })
+        } 
+        else if(burger.classList.contains('toggle') && nav.classList.contains('nav-active')) {
+            navLinks.forEach ((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .8}s`;
+                }
+            })
+        }
+        // else if (burger.classList.contains('toggle') && nav.classList.contains('nav-active')){
+        //     navLinks.forEach ((link, index) => {
+        //         if (link.style.animation) {
+        //             link.style.animation = '';
+        //         } else {
+        //             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .8}s`;
+        //         }
+        //     })
+        // }
+
         // //the burger aniamation 
         // burger.classList.toggle('toggle');
 
+
+
+        // if(burger.classList.contains('toggle') && nav.classList.contains('nav-active')) {
+        //     nav.classList.add('nav-active');
+        //     burger.classList.add('toggle');
+        // }
+
         nav.classList.toggle('nav-active');
         burger.classList.toggle('toggle');
+
     }
+
+    document.querySelectorAll('.nav-link').forEach(link=>{
+        link.addEventListener('click', () => {
+            if(burger.classList.contains('toggle') && nav.classList.contains('nav-active')) {
+                nav.classList.remove('nav-active');
+                burger.classList.remove('toggle');
+            }
+
+            navLinks.forEach ((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .8}s`;
+                }
+            })
+        })
+    })
 
 
     // document.onclick = function (e) {
@@ -47,15 +93,7 @@ const navSlide = () => {
     //     }
     // }
 
-    document.querySelectorAll('.nav-link').forEach(link=>{
-        link.addEventListener('click', () => {
-            if(burger.classList.contains('toggle') && nav.classList.contains('nav-active')) {
-                nav.classList.remove('nav-active');
-                burger.classList.remove('toggle');
-            }
 
-        })
-      })
 
 
 
