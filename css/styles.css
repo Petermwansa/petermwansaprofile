@@ -374,6 +374,8 @@ span {
     align-items: center;
     gap: 2rem;
     background: var(--second-bg-color);
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 
@@ -419,6 +421,40 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+
+
+/* ========= the education section  */
+
+
+.education {
+    margin-top: -25rem;
+    margin-bottom: -15rem;
+    width: 100%;
+    background: var(--second-bg-color);
+}
+.education h2 {
+    position: relative;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.education .education__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.education .education__body img {
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    padding: 3rem;
+}
+
+
+
+
 
 .skills h2 {
     margin-bottom: 5rem;
@@ -719,7 +755,7 @@ section.show__animate .animate {
     }
 
     section {
-        padding: 10rem 3% 2rem;
+        padding: 3rem 3% 2rem;
     }
 
     .footer {
@@ -733,7 +769,7 @@ section.show__animate .animate {
     }
 
     section {
-        padding: 10rem 3% 2rem;
+        padding: 3rem 3% 2rem;
     }
 
 
