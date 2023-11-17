@@ -16,11 +16,7 @@ const navSlide = () => {
 
     burger.onclick = function () {
 
-        if(burger.classList.contains('toggle') && nav.classList.contains('nav-active')) {
-
-        }
-        else {
-        }
+ 
 
 
         
@@ -43,28 +39,8 @@ const navSlide = () => {
                 }
             })
         }
-        // else if (burger.classList.contains('toggle') && nav.classList.contains('nav-active')){
-        //     navLinks.forEach ((link, index) => {
-        //         if (link.style.animation) {
-        //             link.style.animation = '';
-        //         } else {
-        //             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .8}s`;
-        //         }
-        //     })
-        // }
-
-        // //the burger aniamation 
-        // burger.classList.toggle('toggle');
-
-
-
-        // if(burger.classList.contains('toggle') && nav.classList.contains('nav-active')) {
-        //     nav.classList.add('nav-active');
-        //     burger.classList.add('toggle');
-        // }
-
-        nav.classList.toggle('nav-active');
-        burger.classList.toggle('toggle');
+        
+        nav.classList.toggle("nav-active");
 
     }
 
@@ -94,7 +70,25 @@ const navSlide = () => {
     // }
 
 
+        // else if (burger.classList.contains('toggle') && nav.classList.contains('nav-active')){
+        //     navLinks.forEach ((link, index) => {
+        //         if (link.style.animation) {
+        //             link.style.animation = '';
+        //         } else {
+        //             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .8}s`;
+        //         }
+        //     })
+        // }
 
+        // //the burger aniamation 
+        // burger.classList.toggle('toggle');
+
+
+
+        // if(burger.classList.contains('toggle') && nav.classList.contains('nav-active')) {
+        //     nav.classList.add('nav-active');
+        //     burger.classList.add('toggle');
+        // }
 
 
 
@@ -175,7 +169,7 @@ const animator = () => {
 // ================================== typed js ==========================================
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Web Developer', 'iOS Developer', 'UI/UX Designer'],
+    strings: ['Web Developer', 'UI/UX Designer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -241,3 +235,4 @@ load();
 upwards();
 
 
+console.log("Success");

@@ -443,6 +443,7 @@ span {
 .education .education__body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
 }
 
 .education .education__body img {
@@ -789,6 +790,14 @@ section.show__animate .animate {
         line-height: 3rem;
     }
 
+    .education .education__body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
 
     .skills h2 {
         font-size: 4rem;
@@ -929,6 +938,22 @@ section.show__animate .animate {
     .about-img {
         width: 70vw;
         margin-top: 4rem;
+    }
+
+    .education {
+        margin-top: -10rem;
+    }
+
+    .education .education__heading h2 {
+        font-size: 1.6rem;
+    }
+
+    .education .education__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 
     .skills h2 {
