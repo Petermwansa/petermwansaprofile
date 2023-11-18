@@ -893,7 +893,7 @@ section.show__animate .animate {
         opacity: 0;
         transition: 0.7s;
         font-size: 2rem;
-        padding-top: 1.1rem;
+        padding-top: 1.4rem;
     }
 
     .scrollTop:hover {
