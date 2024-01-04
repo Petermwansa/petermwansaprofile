@@ -81,6 +81,10 @@ header.shadow .logo {
     color: var(--bg-color);
 }
 
+.home-substitle {
+    font-size: 1.3rem;
+}
+
 .logo span {
     color: var(--second-color);
 }
@@ -385,6 +389,12 @@ header.shadow .logo {
 }
 
 @media (max-width: 800px) {
+    .logo{
+        font-size: 1.3;
+    }
+    .home-substitle {
+        font-size: 1rem;
+    }
     .nav {
         padding: 14px 0;
     }
@@ -409,6 +419,12 @@ header.shadow .logo {
 }
 
 @media (max-width: 768px) {
+    .logo{
+        font-size: 1.25;
+    }
+    .home-substitle {
+        font-size: 0.95rem;
+    }
     .nav {
         padding: 10px 0;
     }
@@ -452,6 +468,12 @@ header.shadow .logo {
 }
 
 @media (max-width: 570px) {
+    .logo{
+        font-size: 1.25;
+    }
+    .home-substitle {
+        font-size: 0.95rem;
+    }
     .post-header {
         height: 390px;
     }
@@ -478,6 +500,12 @@ header.shadow .logo {
 }
 
 @media (max-width: 396px) {
+    .logo{
+        font-size: 1.25;
+    }
+    .home-substitle {
+        font-size: 0.95rem;
+    }
     .home-title {
         font-size: 2rem;
     }
