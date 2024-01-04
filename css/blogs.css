@@ -13,7 +13,7 @@
 
 /* variables  */
 :root {
-    --container-color: #1a1e21;
+    --container-color: #0a0a0b;
     --second-color: #00ffff;
     --text-color: #172317;
     --bg-color: #ffff;
@@ -51,7 +51,8 @@ section {
 /* for the header  */
 header {
     position: fixed;
-    top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     left: 0;
     width: 100%;
     z-index: 200;
@@ -304,7 +305,7 @@ header.shadow .logo {
 
 .header-img {
     width: 100%;
-    height: 420px;
+    height: 400px;
     object-fit: cover;
     object-position: centeer;
 }
@@ -364,6 +365,13 @@ header.shadow .logo {
     .home-text {
         width: 100%;
     }
+
+    .header-img {
+        width: 85%;
+        height: 380px;
+        object-fit: cover;
+        object-position: centeer;
+    }
 }
 
 @media (max-width: 800px) {
@@ -373,6 +381,13 @@ header.shadow .logo {
     .post-container{
         margin: 0 auto;
         width: 95%;
+    }
+
+    .header-img {
+        width: 80%;
+        height: 350px;
+        object-fit: cover;
+        object-position: centeer;
     }
 }
 
@@ -404,6 +419,12 @@ header.shadow .logo {
     .post-content {
         margin-top: 9rem !important;
     }
+    .header-img {
+        width: 75%;
+        height: 300px;
+        object-fit: cover;
+        object-position: centeer;
+    }
 }
 
 @media (max-width: 570px) {
@@ -414,7 +435,11 @@ header.shadow .logo {
         width: 100%
     }
     .header-img {
-        height: 340px;
+        height: 330px;
+        width: 70%;
+        height: 260px;
+        object-fit: cover;
+        object-position: centeer;
     }
     .footer {
         flex-direction: column;
