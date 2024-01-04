@@ -22,7 +22,7 @@
 
 ::selection {
     color: var(--bg-color);
-    background: var(--second-color);
+    background: var(--container-color);
 }
 
 
@@ -327,6 +327,10 @@ header.shadow .logo {
     line-height: 1.7rem;
     margin: 1rem 0;
     text-align: justify;
+}
+
+.author {
+    margin-top: 5rem;
 }
 
 /* share  */
