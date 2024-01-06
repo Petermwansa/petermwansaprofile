@@ -736,7 +736,9 @@ section.show__animate .animate {
 }
 
 
-
+#copyright {
+    color: var(--text-color);
+}
 
 
 

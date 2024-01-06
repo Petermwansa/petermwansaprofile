@@ -74,7 +74,11 @@
 
     <!-- footer section  -->
     <div class="footer container">
-        <p>Copyright &copy; 2024 YouBlog | All rights reserved.</p>
+        <p>Copyright &copy;
+            <span id="copyright">
+                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+            </span>YouBlog | All rights reserved.
+        </p>    
         <div class="social">
             <a href="#"><i class="bx bxl-facebook"></i></a>
             <a href="#"><i class="bx bxl-twitter"></i></a>

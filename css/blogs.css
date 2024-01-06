@@ -273,7 +273,7 @@ header.shadow .logo {
 /* below for the post page  */
 
 
-/* post contyent  */
+/* post content  */
 
 .post-header {
     width: 100%;
@@ -352,6 +352,13 @@ header.shadow .logo {
     font-size: 1.1rem;
 }
 /* share  */
+
+#copyright {
+    color: var(--text-color);
+}
+
+
+
 
 
 

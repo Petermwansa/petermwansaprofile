@@ -229,11 +229,11 @@ upwards = () => {
     }
 }
 
+
 cursor();
 animator();
 navSlide();
 load();
 upwards();
-
 
 console.log("Success");

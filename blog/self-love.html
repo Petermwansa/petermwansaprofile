@@ -466,7 +466,11 @@
 
     <!-- footer section  -->
     <div class="footer container">
-        <p>Copyright &copy; 2024 YouBlog | All rights reserved.</p>
+        <p>Copyright &copy;
+            <span id="copyright">
+                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+            </span>YouBlog | All rights reserved.
+        </p>    
         <div class="social">
             <a href="https://www.linkedin.com/in/peter-mwansa-814514202/" target="_blank"><i class="bx bxl-linkedin"></i></a>
             <a href="https://twitter.com/peter__m__m" target="_blank"><i class="bx bxl-twitter"></i></a>
