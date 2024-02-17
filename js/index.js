@@ -45,22 +45,32 @@ const navSlide = () => {
 
     }
 
-    document.querySelectorAll('.nav-link').forEach(link=>{
-        link.addEventListener('click', () => {
-            if(burger.classList.contains('toggle') && nav.classList.contains('nav-active')) {
-                nav.classList.remove('nav-active');
-                burger.classList.remove('toggle');
-            }
 
-            navLinks.forEach ((link, index) => {
-                if (link.style.animation) {
-                    link.style.animation = '';
-                } else {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .8}s`;
-                }
-            })
-        })
-    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     // document.onclick = function (e) {

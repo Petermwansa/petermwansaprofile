@@ -54,7 +54,7 @@ body {
     transition: 0.7s;
     color: var(--bg-color);
     font-size: 2rem;
-    padding-top: 1.7rem;
+    padding-top: 1.4rem;
 }
 
 
@@ -262,7 +262,7 @@ section.home .down-arrow path {
     width: 68px;
     height: 68px;
     font-size: 3rem;
-    padding-top: 1.6rem;
+    padding-top: 1.4rem;
 }
 
 
@@ -898,14 +898,14 @@ section.show__animate .animate {
         opacity: 0;
         transition: 0.7s;
         font-size: 2rem;
-        padding-top: 1.3rem;
+        padding-top: .6rem;
     }
 
     .scrollTop:hover {
         width: 58px;
         height: 58px;
-        font-size: 2.5rem;
-        padding-top: 1.3rem;
+        font-size: 2rem;
+        padding-top: 1.6rem;
     }
 
     .home {
